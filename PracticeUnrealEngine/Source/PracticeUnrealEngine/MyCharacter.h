@@ -3,17 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
-#include "MyPawn.generated.h"
+#include "GameFramework/Character.h"
+#include "MyCharacter.generated.h"
 
 UCLASS()
-class PRACTICEUNREALENGINE_API AMyPawn : public APawn
+class PRACTICEUNREALENGINE_API AMyCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this pawn's properties
-	AMyPawn();
+	// Sets default values for this character's properties
+	AMyCharacter();
 
 protected:
 	// Called when the game starts or when spawned
@@ -28,11 +28,12 @@ public:
 
 	void UpDown(float Value);
 	void LeftRight(float Value);
+	void Yaw(float Value);
 
 private:
 	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* Mesh;
+	class USpringArmComponent* SpringArm;
 
 	UPROPERTY(VisibleAnywhere)
-	class UFloatingPawnMovement* Movement;
+	class UCameraComponent* Camera;
 };
