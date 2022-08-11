@@ -22,6 +22,10 @@ public:
 	void PlayAttackMontage();
 
 private:
+	UFUNCTION()
+	void AnimNotify_AttackHit();
+
+private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Pawn, Meta=(AllowPrivateAccess=true))
 	float Speed;
 

@@ -35,3 +35,8 @@ void UMyAnimInstance::PlayAttackMontage()
 {
 	Montage_Play(AttackMontage, 1.0f);
 }
+
+void UMyAnimInstance::AnimNotify_AttackHit()
+{
+	UE_LOG(LogTemp, Log, TEXT("AnimNotify_AttackHit"));
+}
