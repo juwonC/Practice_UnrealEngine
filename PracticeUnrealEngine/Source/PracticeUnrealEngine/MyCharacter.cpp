@@ -80,10 +80,10 @@ void AMyCharacter::Attack()
 
 void AMyCharacter::UpDown(float Value)
 {
-	if (Value == 0.f)
-	{
-		return;
-	}
+	//if (Value == 0.f)
+	//{
+	//	return;
+	//}
 
 	//UE_LOG(LogTemp, Warning, TEXT("UpDown %f"), Value);
 
@@ -93,10 +93,10 @@ void AMyCharacter::UpDown(float Value)
 
 void AMyCharacter::LeftRight(float Value)
 {
-	if (Value == 0.f)
-	{
-		return;
-	}
+	//if (Value == 0.f)
+	//{
+	//	return;
+	//}
 
 	//UE_LOG(LogTemp, Warning, TEXT("LeftRight %f"), Value);
 
